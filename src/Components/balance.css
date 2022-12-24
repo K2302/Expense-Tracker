@@ -1,0 +1,107 @@
+ .Bal {
+
+    background: rgba(56, 142, 248, 0.5);
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 17.5px );
+-webkit-backdrop-filter: blur( 17.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+height: 250px;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content:center;
+
+box-sizing: border-box;
+overflow: hidden;
+transform: translatey(0px);
+animation: float 6s ease-in-out infinite;
+ }
+ .lo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 550px;
+    font-weight: 900;
+    font-size: 30px;
+ }
+
+ .Income {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     width: 400px;
+  
+ }
+
+ .lol {
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     width: 200px;
+     border-radius: 10px;
+     height: 40px;
+     margin: 7px;
+ }
+
+ .lol2 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 200px;
+     border-radius: 10px;
+     height: 40px;
+     margin: 7px;
+ }
+
+ h2 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 400px;
+
+ }
+
+ .sp {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: space-between;
+     width: 300px;
+     font-weight: 800;
+     border-radius: 10px;
+     height: 100px;
+     margin: 20px;
+     font-size: 20px;
+     
+ }
+ .rd{
+    /* From https://css.glass */
+background: rgb(211 72 76 / 74%);
+border-radius: 16px;
+border: 1px solid rgba(249, 13, 21, 0.47);
+color: rgb(185, 14, 14);
+
+ }
+ .gr{
+    /* From https://css.glass */
+background: rgba(176, 253, 194, 0.79);
+border-radius: 16px;
+border: 1px solid rgba(13, 249, 68, 0.47);
+color: rgb(14, 185, 82);
+ }
+ @keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}

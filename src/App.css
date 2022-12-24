@@ -1,0 +1,182 @@
+/* *{
+  margin: 2px;
+  padding: 2px;
+} */
+.App{
+  margin: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  /* transform: translatey(0px);
+  animation: float 6s ease-in-out infinite; */
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+  background: rgb(18,202,206);
+background: linear-gradient(90deg, rgba(18,202,206,1) 0%, rgba(11,40,220,1) 18%, rgba(6,168,147,1) 38%, rgba(8,143,176,1) 59%, rgba(6,3,207,1) 82%, rgba(0,255,230,1) 100%);
+
+}
+h1{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: rgb(74, 16, 249);
+  margin: 80px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 70px;
+}
+.col{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #6193e5;
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 300px;
+  height: 40px;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+  border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+  border-image: none;
+  border-radius: 6px 6px 6px 6px;
+  border-style: none solid solid none;
+  border-width: medium 1px 1px medium;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+  color: #555555;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  line-height: 1.4em;
+  padding: 5px 8px;
+  transition: background-color 0.2s ease 0s;
+}
+.input::focus{
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+
+
+/* CSS */
+.button-81 {
+  margin:10px;
+  background-color: #32befb;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 15rem;
+  height: 3.5rem;
+}
+
+.button-81:hover {
+  background-color: #1e293b;
+  color: #fff;
+}
+#tr{
+  color:rgb(3, 3, 3);
+  /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+  
+  font-size: 40px;
+  font-weight: 800;
+  margin: 5px;
+}
+.New_tran{
+color: blue;
+margin: 40px;
+background: rgba( 96, 162, 237, 0.35 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+height: 310px;
+display: flex;
+flex-direction: column;
+align-items:center;
+justify-content:center;
+
+box-sizing: border-box;
+overflow: hidden;
+transform: translatey(0px);
+animation: float 6s ease-in-out infinite;
+
+}
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1.6rem 2rem;
+  }
+}
+@media (max-width:1104px){
+  .col{
+    flex-direction: column;
+  }
+}
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+.root {
+  /* --background-color: black; */
+  --text-color: hsl(192deg 86% 48%);
+}
+
+.wrapper {
+  display: grid;
+  place-content: center;
+  background-color: var(--background-color);
+  min-height: 30vh;
+  font-family: "Oswald", sans-serif;
+  font-size: clamp(1.1rem, 0.7rem + 7.5vw, 7.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-color);
+}
+
+.wrapper > div {
+  grid-area: 1/1/-1/-1;
+}
+.top {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+.bottom {
+  clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+  color: transparent;
+  background: -webkit-linear-gradient(177deg, black 53%, var(--text-color) 65%);
+  background: linear-gradient(177deg, black 53%, var(--text-color) 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transform: translateX(-0.02em);
+}
