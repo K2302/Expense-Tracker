@@ -73,7 +73,6 @@ function App() {
      setnumb('')
     }
   }
-  let k = 0;
   return (
     <div className="App">
 
