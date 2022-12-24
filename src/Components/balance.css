@@ -1,9 +1,9 @@
  .Bal {
 
-    background: rgba(56, 142, 248, 0.5);
+background: rgba( 255, 255, 255, 0.75 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 17.5px );
--webkit-backdrop-filter: blur( 17.5px );
+backdrop-filter: blur( 20px );
+-webkit-backdrop-filter: blur( 20px );
 border-radius: 10px;
 border: 1px solid rgba( 255, 255, 255, 0.18 );
 height: 250px;
@@ -104,4 +104,13 @@ color: rgb(14, 185, 82);
 		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 		transform: translatey(0px);
 	}
+}
+@media (max-width:600px){
+  .Bal{
+   width:400px;
+   height: 400px;
+  }
+  .Income{
+    flex-direction: column;
+  }
 }

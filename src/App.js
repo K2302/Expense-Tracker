@@ -84,7 +84,7 @@ function App() {
 </div>
     
       <div className='col'>
-        <div>
+        <div className='res'>
           <Balance sm={sum} pos={psum} nos={nsum}></Balance>
           <div className='New_tran'>
             <h2 id="tr">New Transaction</h2>
